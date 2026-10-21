@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Personal site config",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "lang": { "type": "string" },
+    "name": { "type": "string", "description": "Shown as the page title and wordmark." },
+    "nameLines": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 4,
+      "description": "Stacked lines of the yellow wordmark. Leave this out to split name on spaces."
+    },
+    "tagline": { "type": "string" },
+    "showExampleBanner": { "type": "boolean" },
+    "avatar": {
+      "type": "object",
+      "properties": {
+        "src": { "type": "string", "description": "Relative path such as assets/me.jpg, or an https URL." },
+        "alt": { "type": "string" }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "properties": {
+        "tape": { "type": "string" },
+        "url": { "type": "string", "description": "Leave blank to show hero.message in a dialog." },
+        "message": { "type": "string" }
+      }
+    },
+    "nav": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "href"],
+        "properties": {
+          "label": { "type": "string" },
+          "href": { "type": "string" },
+          "current": { "type": "boolean" }
+        }
+      }
+    },
+    "stats": {
+      "type": "array",
+      "description": "Display text you type yourself. These are not a live hit counter.",
+      "items": {
+        "type": "object",
+        "required": ["label", "value"],
+        "properties": {
+          "label": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "noticesTitle": { "type": "string" },
+    "noticesNote": { "type": "string" },
+    "notices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "text": { "type": "string" },
+          "button": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "socials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "properties": {
+          "network": {
+            "type": "string",
+            "description": "twitter, tiktok, instagram, kick, youtube, twitch, discord, github, facebook, website, or link."
+          },
+          "label": { "type": "string" },
+          "handle": { "type": "string" },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "twitter": {
+      "type": "object",
+      "properties": {
+        "handle": { "type": "string" },
+        "latestPostId": { "type": "string", "description": "Digits only, from twitter.com/name/status/123..." },
+        "profileUrl": { "type": "string" }
+      }
+    },
+    "latestTitle": { "type": "string" },
+    "latestNote": { "type": "string" },
+    "linksTitle": { "type": "string" },
+    "linksNote": { "type": "string" },
+    "links": { "$ref": "#/$defs/cards" },
+    "gamesTitle": { "type": "string" },
+    "gamesNote": { "type": "string" },
+    "games": { "$ref": "#/$defs/cards" },
+    "aboutTitle": { "type": "string" },
+    "about": { "type": "string" },
+    "spaces": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "userId": { "type": "string", "description": "Numeric Twitter user id. Leave blank to keep the checker turned off." },
+        "statusUrl": { "type": "string" },
+        "fallbackUrl": { "type": "string" },
+        "previewTitle": { "type": "string" }
+      }
+    },
+    "footer": {
+      "type": "object",
+      "properties": {
+        "showTemplateCredit": { "type": "boolean" },
+        "note": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "kicker": { "type": "string" },
+          "title": { "type": "string" },
+          "text": { "type": "string" },
+          "url": { "type": "string" },
+          "action": { "type": "string" }
+        }
+      }
+    }
+  }
+}

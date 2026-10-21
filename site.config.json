@@ -1,0 +1,111 @@
+{
+  "$schema": "./site.config.schema.json",
+  "_readme": "Replace every EXAMPLE value with your own. Delete list items you do not want. Set showExampleBanner to false when the site is yours. Full notes are in README.md.",
+  "lang": "en",
+  "name": "YOUR NAME HERE",
+  "nameLines": ["YOUR", "NAME", "HERE"],
+  "tagline": "WELCOME TO YOUR SITE, WHATEVER THIS IS",
+  "showExampleBanner": true,
+  "avatar": {
+    "src": "assets/avatar.svg",
+    "alt": "EXAMPLE portrait. Replace assets/avatar.svg with your photo."
+  },
+  "hero": {
+    "tape": "DON'T CLICK THIS",
+    "url": "",
+    "message": "EXAMPLE — this button is yours. Set hero.url to a shop, a game, a Space, or any other page."
+  },
+  "nav": [
+    { "label": "Home", "href": "#top", "current": true },
+    { "label": "Links", "href": "#links" },
+    { "label": "Games", "href": "#games" },
+    { "label": "About", "href": "#about" },
+    { "label": "Example Shop", "href": "#links" },
+    { "label": "Latest Post", "href": "#latest" },
+    { "label": "Example Radio", "href": "#links" },
+    { "label": "Your Space", "href": "https://twitter.com/i/spaces" }
+  ],
+  "stats": [
+    { "label": "THIS PAGE", "value": "000000" },
+    { "label": "SITE", "value": "000000" }
+  ],
+  "noticesTitle": "Notice",
+  "noticesNote": "// important updates",
+  "notices": [
+    {
+      "date": "Oct 21, 2026",
+      "text": "EXAMPLE notice. Say what is new, then replace this when you have a real update.",
+      "button": "Example link",
+      "url": "https://example.com"
+    },
+    {
+      "date": "Oct 1, 2026",
+      "text": "EXAMPLE older note. Notices sort with the newest date on top.",
+      "button": "",
+      "url": ""
+    }
+  ],
+  "socials": [
+    { "network": "twitter", "label": "Twitter", "handle": "@yourname", "url": "https://twitter.com/yourname" },
+    { "network": "tiktok", "label": "TikTok", "handle": "@yourname", "url": "https://www.tiktok.com/@yourname" },
+    { "network": "instagram", "label": "Instagram", "handle": "@yourname", "url": "https://instagram.com/yourname" },
+    { "network": "kick", "label": "Kick", "handle": "yourname", "url": "https://kick.com/yourname" },
+    { "network": "youtube", "label": "YouTube", "handle": "@yourname", "url": "https://www.youtube.com/@yourname" }
+  ],
+  "twitter": {
+    "handle": "yourname",
+    "latestPostId": "",
+    "profileUrl": "https://twitter.com/yourname"
+  },
+  "latestTitle": "Latest from Twitter",
+  "latestNote": "EXAMPLE — paste a post ID into twitter.latestPostId.",
+  "linksTitle": "Links",
+  "linksNote": "EXAMPLE — books, shops, and pages you want up front.",
+  "links": [
+    {
+      "kicker": "Favorite book",
+      "title": "EXAMPLE Book Title",
+      "text": "Say why you keep handing people this book.",
+      "url": "https://example.com/book",
+      "action": "Open"
+    },
+    {
+      "kicker": "Shop",
+      "title": "EXAMPLE Shop",
+      "text": "Merch, prints, or a store. Point this card at yours.",
+      "url": "https://example.com/shop",
+      "action": "Visit"
+    }
+  ],
+  "gamesTitle": "Games",
+  "gamesNote": "EXAMPLE — games, toys, and extra pages.",
+  "games": [
+    {
+      "kicker": "Play",
+      "title": "EXAMPLE Game",
+      "text": "A game, a tool, or a page you built.",
+      "url": "https://example.com/game",
+      "action": "Play"
+    },
+    {
+      "kicker": "Open",
+      "title": "EXAMPLE Link",
+      "text": "Another place you want people to land.",
+      "url": "https://example.com/play",
+      "action": "Open"
+    }
+  ],
+  "aboutTitle": "About",
+  "about": "EXAMPLE bio. Say who you are, what you make, and where people can find you. Two or three sentences is plenty.",
+  "spaces": {
+    "enabled": true,
+    "userId": "",
+    "statusUrl": "status.json",
+    "fallbackUrl": "https://twitter.com/i/spaces",
+    "previewTitle": "EXAMPLE live Space"
+  },
+  "footer": {
+    "showTemplateCredit": true,
+    "note": "EXAMPLE footer note. Say hello, add a disclaimer, or leave this blank."
+  }
+}
