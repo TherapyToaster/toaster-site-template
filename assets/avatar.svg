@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Example portrait placeholder">
+  <rect width="400" height="500" fill="#14080c"/>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M28 0H0V28" fill="none" stroke="#FFD400" stroke-width="1" opacity="0.28"/>
+  </pattern>
+  <rect width="400" height="500" fill="url(#grid)"/>
+  <path d="M0 0h56v14H14v42H0z" fill="#FFD400"/>
+  <path d="M400 0h-56v14h42v42h14z" fill="#FFD400"/>
+  <path d="M0 500h56v-14H14v-42H0z" fill="#FFD400"/>
+  <path d="M400 500h-56v-14h42v-42h14z" fill="#FFD400"/>
+  <g fill="#00ffff" opacity="0.8" transform="translate(-12,4)">
+    <circle cx="200" cy="168" r="74"/>
+    <path d="M96 470c14-120 52-164 104-164s90 44 104 164z"/>
+  </g>
+  <g fill="#ff2b4a" opacity="0.78" transform="translate(12,-2)">
+    <circle cx="200" cy="168" r="74"/>
+    <path d="M96 470c14-120 52-164 104-164s90 44 104 164z"/>
+  </g>
+  <g fill="#1a1a1a">
+    <circle cx="200" cy="168" r="74"/>
+    <path d="M96 470c14-120 52-164 104-164s90 44 104 164z"/>
+  </g>
+  <rect y="96" width="400" height="10" fill="#00ffff"/>
+  <rect x="30" y="210" width="340" height="8" fill="#ff2b4a"/>
+  <rect y="300" width="400" height="12" fill="#FFD400" opacity="0.92"/>
+  <rect y="418" width="400" height="82" fill="#FFD400"/>
+  <text x="200" y="456" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="36" fill="#000">EXAMPLE</text>
+  <text x="200" y="484" text-anchor="middle" font-family="ui-monospace, monospace" font-size="16" letter-spacing="4" fill="#000">YOUR PHOTO</text>
+</svg>
